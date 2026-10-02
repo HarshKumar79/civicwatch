@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+/* Tailwind v4 Theme Configuration */
+@theme {
+  /* Colors */
+  --color-paper: #F3F5F7;
+  --color-paper-raised: #FFFFFF;
+  --color-ink: #0B2A4A;
+  --color-ink-soft: #4A5A6B;
+  --color-ink-faint: #8592A0;
+  --color-brass: #E8770A;
+  --color-brass-dark: #B85E08;
+  --color-river: #1B7A4D;
+  --color-river-dark: #136339;
+  --color-alert: #C22B1F;
+  --color-alert-dark: #8F1F16;
+  --color-line: #DEE3E8;
+  --color-line-strong: #C3CCD4;
+  --color-navy: #0B2A4A;
+  --color-navy-deep: #071D33;
+
+  /* Fonts (Linked to Next.js variables) */
+  --font-display: var(--font-noto-sans), Arial, sans-serif;
+  --font-body: var(--font-noto-sans), Arial, sans-serif;
+  --font-mono: var(--font-ibm-mono), monospace;
+
+  /* Shadows */
+  --shadow-card: 0 1px 0 rgba(11,42,74,0.05);
+  --shadow-card-hover: 0 1px 3px rgba(11,42,74,0.12);
+
+  /* Animations & Keyframes native to v4 */
+  --animate-marquee: marquee 26s linear infinite;
+  --keyframes-marquee: {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  };
+}
+
+/* Base Body Styles */
+@layer base {
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* High Contrast Mode for Accessibility (DBIM Standards) */
+.high-contrast {
+  --color-paper: #000000;
+  --color-paper-raised: #000000;
+  --color-ink: #FFFF00;
+  --color-ink-soft: #FFFFFF;
+  --color-ink-faint: #CCCCCC;
+  --color-line: #FFFF00;
+  --color-line-strong: #FFFF00;
+  --color-navy: #000000;
+  --color-navy-deep: #000000;
+  --color-brass: #FFFF00;
+}

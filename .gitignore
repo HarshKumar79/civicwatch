@@ -1,0 +1,21 @@
+# Django
+civicwatch-backend/venv/
+civicwatch-backend/__pycache__/
+civicwatch-backend/**/*.pyc
+civicwatch-backend/db.sqlite3
+civicwatch-backend/.env
+civicwatch-backend/media/
+civicwatch-backend/staticfiles/
+
+# Next.js
+civicwatch-frontend/node_modules/
+civicwatch-frontend/.next/
+civicwatch-frontend/.env
+civicwatch-frontend/.env.local
+civicwatch-frontend/out/
+
+# OS / Editor
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
